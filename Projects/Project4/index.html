@@ -23,7 +23,6 @@
         h2 {
             font-family: 'msyhl', sans-serif;
             color: #49E100; /* deep blue grey headings */
-            border: 2px solid #62E0CF;
         }
         a {
             color: #FF0000; /* link color */
@@ -48,13 +47,52 @@
 	        float: left;
 	        padding-right: 10px;
         }
-
         .thumbnailright{
 	        float: right;
 	        padding-left: 10px;
         }
+
+/* Table styles */
+        table {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse; 
+        }
+        caption {
+            font-family: 'msyhl', sans-serif;
+            color: #FF8100;
+            font-weight: bold;
+            background-color: #096881;
+            border-radius: 10px;
+            border: 2px solid #096881;
+            height: 40px;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        th {
+            background-color: #096881;
+            color: white; /* White text */
+            padding: 10px;
+            font-size: 20px;
+        }
+        td {
+            color: #28334A;
+            background-color: #92ebdf; 
+            font-size: 20px;
+            padding: 10px;
+            text-align: left;
+        }
+        tr:nth-child(even) td {
+            background-color: #62E0CF; /* alternating background colors for rows */
+        }
+        td:nth-child(2), td:nth-child(3) {
+            text-align: center; /* Right align for the second and third columns */
+}    
     </style>
 </head>
+
+
 <body>
 
     <p>
@@ -123,6 +161,61 @@
     <p>
     <strong>After weighing these points, the Smiths decided to go ahead by starting small...</strong>
     </p>
+
+ 
+ <!-- Inserted Table -->
+
+
+
+    <h2><em>Sale Prices this Week</em></h2>
+
+    <table>
+
+        <caption>Pet Prices</caption> 
+
+        <tr>
+            <th>Product</th>
+            <th>Regular Price</th>
+            <th>Sale Price</th>
+        </tr>
+
+        <tr>
+            <td>Dogs</td>
+            <td>$48</td>
+            <td>$36</td>
+        </tr>
+
+        <tr>
+            <td>Cats</td>
+            <td>$40</td>
+            <td>$30</td>
+        </tr>
+
+        <tr>
+            <td>Horses</td>
+            <td>$150</td>
+            <td>$110</td>
+
+        </tr>
+
+        <tr>
+            <td>Pigs</td>
+            <td>$48</td>
+            <td>$39</td>
+        </tr>
+
+        <tr>
+            <td>Snakes</td>
+            <td>$36</td>
+            <td>$24</td>
+        </tr>
+
+    </table>
+
+
+
+
+
     <a href="#top">Return to Top</a>
 
 
