@@ -29,6 +29,7 @@ h2 {
   flex-direction: row;
   align-items: flex-stretch;
   flex-wrap: wrap;
+  justify-content: center;
 
 
 }
@@ -38,6 +39,9 @@ section {
   padding: 20px;
   border: 1px dotted maroon;
   width: 240px;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
 }
 .title {
   background-color: #783F27;
@@ -50,7 +54,13 @@ section {
   padding: 5px;
   width: 100%;
   text-align: center;
+  margin-top: auto;
 }
+.photo {
+  order: -1;
+}
+img {width: 100%; }
+
 </style>
 
 </head>
