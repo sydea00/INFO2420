@@ -5,8 +5,49 @@
 <title>Rent a Pet - Graphics</title>
 
 <style type="text/css">
+     @font-face {
+    font-family: 'msyhl'; 
+    src: url('fonts/msyhl.ttcf'); 
+    src: local('msyhl'), url('fonts/msyhl.ttcf') format('truetype'); 
+}
+        body {
+            font-family: 'msyhl', sans-serif;
+            background-color: #00AD95; /* aqua/blue/green background / nature and animals = natural world */
+            color: #28334A; /* blue grey text */
+            font-size: 100%; /* normal text font size */
+        }
+        h1 {
+            font-family: 'msyhl', sans-serif;
+            color: #FF8100; /* deep blue grey headings */
+            border: 5px solid #096881;
+        }
+        h2 {
+            font-family: 'msyhl', sans-serif;
+            color: #49E100; /* deep blue grey headings */
+            border: 2px solid #62E0CF;
+        }
+        a {
+            color: #FF0000; /* link color */
+        }
+        a:visited {
+            color: #C31B00; /* visited link color */
+        }
+        a:hover {
+            color: #420E0E; /* hover link color */
+        }
+
+        .thumbnailleft{
+	        float: left;
+	        padding-right: 10px;
+        }
+
+        .thumbnailright{
+	        float: right;
+	        padding-left: 10px;
+        }
 
 
+		
 	#thumbs, #image {
 		width: 900px;
 		text-align: center;
@@ -41,28 +82,28 @@
 	logo1 = new Image
 	logo2 = new Image
 if (document.images) {
-	PrintButton1.src = "images/print5.gif"
-	PrintButton2.src = "images/print6.gif"
-	logo1.src = "images/logo1.jpg"
-	logo2.src = "images/logo2.jpg"
+	PrintButton1.src = "images/printpagebutton1.png"
+	PrintButton2.src = "images/printpagebutton2.png"
+	logo1.src = "images/logo1.png"
+	logo2.src = "images/logo2.png"
 }
 
 
 		var imgArray = new Array(
-			'Image1Lg.jpg',
-			'Image2Lg.jpg',
-			'Image3Lg.jpg',
-			'Image4Lg.jpg'
+			'BirdDogLg.jpg',
+			'HuntingDogsLg.jpg',
+			'KidsDogLg.jpg',
+			'CatandDogLg.jpg'
 			
 
 		);
 
 
 		var titleArray = new Array(
-			'Dog Performing a Trick',
-			'Two Dogs',
+			'Bird and Dog Buddies',
+			'Two Beautiful Hunting Dogs',
 			'Dog and Two Boys Portrait',
-			'Woman and Dog'
+			'Snuggling Cat and Dog'
 			
 		);
 			
@@ -104,7 +145,7 @@ if (document.images) {
 	<a href="" onMouseOver="document.PrintButton.src=PrintButton2.src;"
 	onMouseOut="document.PrintButton.src=PrintButton1.src;">
 
-	<img src="images/print5.gif" width="250" height="50" 
+	<img src="images/print5.gif" width="200" height="50" 
 	name="PrintButton" alt="PrintButton" style="border:none;"/>
 
 	</a>
@@ -128,17 +169,17 @@ if (document.images) {
 
 
 <div id="thumbs">
-		<img src="Images/Thumbnails/Image1Sm.jpg" alt="Dog doing Trick" onmouseover="swapImage(0);" />
-		<img src="Images/Thumbnails/Image2Sm.jpg" alt="Two hunting Dogs" onmouseover="swapImage(1);" />
-		<img src="Images/Thumbnails/Image3Sm.jpg" alt="Dog and two kids" onmouseover="swapImage(2);" />
-		<img src="Images/Thumbnails/Image4Sm.jpg" alt="Woman and Dog" onmouseover="swapImage(3);" />
+		<img src="Images/Thumbnails/BirdDogSm.jpg" alt="Bird and Dog" onmouseover="swapImage(0);" />
+		<img src="Images/Thumbnails/HuntingDogsSm.jpg" alt="Two Hunting Dogs" onmouseover="swapImage(1);" />
+		<img src="Images/Thumbnails/KidsDogSm.jpg" alt="Dog and Two Kids" onmouseover="swapImage(2);" />
+		<img src="Images/Thumbnails/CatandDogSm.jpg" alt="Cat and Dog" onmouseover="swapImage(3);" />
 		
 </div>
 
 	<div id="image">
 
-		<img id="theImage" src="Images/FullSize/Image1Lg.jpg" alt="Dog doing trick" />
-		<h3 id="bottomText">Newlyweds Sailing</h3>
+		<img id="theImage" src="Images/FullSize/BirdDogLg.jpg" alt="Bird and Dog" />
+		<h3 id="bottomText">Bird and Dog</h3>
 	</div>
 
 <img src="images/2colback.jpg">
