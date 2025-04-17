@@ -1,0 +1,119 @@
+<script>
+
+	PrintButton1 = new Image
+	PrintButton2 = new Image
+	logo1 = new Image
+	logo2 = new Image
+if (document.images) {
+	PrintButton1.src = "images/printpagebutton1.png"
+	PrintButton2.src = "images/printpagebutton2.png"
+	logo1.src = "images/logo1.png"
+	logo2.src = "images/logo2.png"
+}
+
+
+var imgArray = new Array(
+  'image1lg.jpg',
+  'image2lg.jpg',
+  'image3lg.jpg',
+  'image4lg.jpg'
+);
+
+
+		var titleArray = new Array(
+			'Bird and Dog',
+			'Hunting Dogs',
+			'Kids and Dog',
+			'Cat and Dog'
+			
+		);
+			
+		var imgPath = "images/fullsize/";
+		
+		function swapImage(imgID) {
+
+			var theImage = document.getElementById('theImage');
+			var textDiv = document.getElementById('bottomText');
+
+			var newImg;
+			var textTitle;
+
+			newImg = imgArray[imgID];
+			theImage.src = imgPath + newImg;
+
+			textTitle=titleArray[imgID];
+
+      			textDiv.innerHTML = textTitle;
+		}
+			
+		function preloadImages() {		
+			for(var i = 0; i < imgArray.length; i++) {
+				var tmpImg = new Image;
+				tmpImg.src = imgPath + imgArray[i];
+			}
+		}
+		
+
+</script>
+
+
+</head>
+<body onload="preloadImages()">
+
+<div class="center">
+
+	<a href="" onMouseOver="document.PrintButton.src=PrintButton2.src;"
+	onMouseOut="document.PrintButton.src=PrintButton1.src;">
+
+	<img src="images/printpagebutton1.png" width="200" height="50" 
+	name="PrintButton" alt="PrintButton" style="border:none;">
+
+	</a>
+</div>
+
+
+<div id="logo" class="center">
+	<a href="logo.html" onMouseOver="document.logo.src=logo2.src;"
+	onMouseOut="document.logo.src=logo1.src;">
+<br>
+	<img src="images/logo1.png" width="150" height="150" 
+	name="logo" alt="logo" style="border:none;">
+
+	</a>
+</div>
+
+<br>
+<br>
+<br>
+
+
+<div id="thumbs">
+		<img src="images/thumbnails/image1sm.jpg" alt="Bird and Dog" onmouseover="swapImage(0);">
+		<img src="images/thumbnails/image2sm.jpg" alt="Hunting Dogs" onmouseover="swapImage(1);">
+		<img src="images/thumbnails/image3sm.jpg" alt="Kids with Dog" onmouseover="swapImage(2);">
+		<img src="images/thumbnails/image4sm.jpg" alt="Cat and Dog" onmouseover="swapImage(3);">
+		
+</div>
+
+	<div id="image">
+
+		<img id="theImage" src="images/fullSize/image1Lg.jpg" alt="Bird and Dog">
+		<h3 id="bottomText">Bird and Dog</h3>
+	</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+<img alt="background (2K)" src="images/background.png" height="150" width="900" />
+
+
+
+  
+
+</body>
+</html>
+// JavaScript Document
