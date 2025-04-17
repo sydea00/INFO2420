@@ -1,16 +1,122 @@
 ﻿<!DOCTYPE html>
+
 <html>
+
 <head>
+
 <meta charset="UTF-8">
+
 <title>Rent-A-Pet</title>
+
+<script type="text/javascript" src="myscripts.js"></script>
+
 <link rel="stylesheet" href="mystyles.css" type="text/css">
+
 </head>
 
-<body>
+<body onload="preloadImages()">
 
-<p>
-The content of the document goes here . . .
-</p>
+    <div class="container">
+
+        <header>
+
+            <div id="logo" class="center">
+
+                <a href="logo.html" onMouseOver="document.logo.src=logo2.src;"
+
+                onMouseOut="document.logo.src=logo1.src;">
+
+                    <img src="images/logo1.png" width="150" height="150" 
+
+                    name="logo" alt="Rent-A-Pet Logo" style="border:none;">
+
+                </a>
+
+            </div>
+
+
+            <div class="banner">
+
+                <img src="images/favbanner.png" alt="Rent-A-Pet Banner">
+
+            </div>
+
+            
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="tributes.html">Tributes</a></li>
+
+                    <li><a href="survey.html">Survey</a></li>
+
+                    <li><a href="favorites.html">Favorites</a></li>
+
+                </ul>
+
+            </nav>
+
+        </header>
+
+
+        <section>
+
+            <article>
+
+                <div class="center">
+
+                    <a href="#" onMouseOver="document.PrintButton.src=PrintButton2.src;"
+
+                    onMouseOut="document.PrintButton.src=PrintButton1.src;">
+
+                        <img src="images/print1.png" width="200" height="50" 
+
+                        name="PrintButton" alt="Print Page" style="border:none;">
+
+                    </a>
+
+                </div>
+
+
+                <div id="thumbs">
+
+                    <img src="images/thumbnails/image1sm.jpg" alt="Bird and Dog" onmouseover="swapImage(0);">
+
+                    <img src="images/thumbnails/image2sm.jpg" alt="Hunting Dogs" onmouseover="swapImage(1);">
+
+                    <img src="images/thumbnails/image3sm.jpg" alt="Kids with Dog" onmouseover="swapImage(2);">
+
+                    <img src="images/thumbnails/image4sm.jpg" alt="Cat and Dog" onmouseover="swapImage(3);">
+
+                </div>
+
+
+                <div id="image">
+
+                    <img id="theImage" src="images/fullSize/image1Lg.jpg" alt="Bird and Dog">
+
+                    <h3 id="bottomText">Bird and Dog</h3>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <footer>
+
+            <!-- Footer content -->
+
+        </footer>
+
+    </div>
 
 </body>
+
 </html>

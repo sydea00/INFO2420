@@ -2,116 +2,336 @@
 /* CSS Document */
 
 body {
+
     background-color: #62E0CF; 
-    background-image: url('images/2colback.jpg'); /* Set the background image */
-    background-repeat: repeat-y; 
-	}
-	#thumbs, #image {
-		width: 900px;
-		text-align: center;
-		margin: 0 auto 0 auto;
-		color: #000;
-	}
 
-	#thumbs {
-		margin-top: 10px;
-	}
+    background-image: url('images/background.png');
 
-			
-	#thumbs img {
-		border: solid 5px #FF8100;
-		margin: 5px;
-	}
+    background-repeat: repeat;
 
-	#image{
-		height:500px;
-	}
+    font-family: 'msyhl', sans-serif;
 
-	.instructions{
-		font-style:italic;
-	}
-	.center{
-	text-align: center;
-	}
-body {
-            font-family: 'msyhl', sans-serif;
-            background-color: #00AD95; /* aqua/blue/green background / nature and animals = natural world */
-            color: #28334A; /* blue grey text */
-            font-size: 100%; /* normal text font size */
-        }
-        h1 {
-            font-family: 'msyhl', sans-serif;
-            color: #FF8100; /* deep blue grey headings */
-            border: 5px solid #096881;
-        }
-        h2 {
-            font-family: 'msyhl', sans-serif;
-            color: #49E100; /* deep blue grey headings */
-        }
-        a {
-            color: #FF0000; /* link color */
-        }
-        a:visited {
-            color: #C31B00; /* visited link color */
-        }
-        a:hover {
-            color: #420E0E; /* hover link color */
-        }
-        img {
-            margin: 10px; /* add margin around images */
-            width: 200px; /* set a fixed width for images */
-            height: auto; /* maintain aspect ratio */
-            border: 10px solid #6BAEE1; /* border color */
-            border-collapse: separate;
-            border-spacing: 10px;
-            padding: 8px; /* space between image and border */
-            border-radius: 10px; /* size of border */
-        }
-        .thumbnailleft{
-	        float: left;
-	        padding-right: 10px;
-        }
-        .thumbnailright{
-	        float: right;
-	        padding-left: 10px;
-        }
+    color: #28334A;
 
-/* Table styles */
-        table {
-            width: 100%;
-            margin: 0 auto;
-            border-collapse: collapse; 
-        }
-        caption { /* table title */
-            font-family: 'msyhl', sans-serif;
-            color: #FF8100;
-            font-weight: bold;
-            background-color: #096881;
-            border-radius: 10px;
-            border: 2px solid #096881;
-            height: 40px;
-            text-align: center;
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-        th { /* table heading */
-            background-color: #096881;
-            color: white; /* White text */
-            padding: 10px;
-            font-size: 20px;
-        }
-        td { /* table data rows */
-            color: #28334A;
-            background-color: #92ebdf; 
-            font-size: 20px;
-            padding: 10px;
-            text-align: left;
-        }
-        tr:nth-child(even) td {
-            background-color: #62E0CF; /* alternating background colors for rows */
-        }
-        td:nth-child(2), td:nth-child(3) {
-            text-align: center; /* Right align for the second and third columns */
+    font-size: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+}
 
 
+.container {
 
+    width: 900px;
+
+    margin: 0 auto;
+
+    background-color: #ffffff;
+
+    box-sizing: border-box;
+
+}
+
+
+header {
+
+    width: 900px;
+
+    height: 250px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+
+    position: relative;
+
+}
+
+
+.logo {
+
+    float: left;
+
+    width: 150px;
+
+}
+
+
+.logo img {
+
+    width: 150px;
+
+    height: auto;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+.banner {
+
+    float: right;
+
+    width: 500px;
+
+}
+
+
+.banner img {
+
+    width: 100%;
+
+    height: auto;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+/* Navigation styles */
+
+nav {
+
+    float: right;
+
+    width: 30%;
+
+    margin-top: 20px;
+
+    box-sizing: border-box;
+
+    clear: right;
+
+}
+
+
+nav ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+
+nav li {
+
+    margin-bottom: 10px;
+
+}
+
+
+nav a {
+
+    display: block;
+
+    padding: 10px 15px;
+
+    text-decoration: none;
+
+    background-color: #62E0CF;
+
+    color: #28334A;
+
+    border-radius: 5px;
+
+    text-align: center;
+
+    transition: all 0.3s ease;
+
+}
+
+
+nav a:hover {
+
+    background-color: #FF8100;
+
+    color: #ffffff;
+
+}
+
+
+/* Thumbnail and full image styles */
+
+#thumbs, #image {
+
+    width: 900px;
+
+    text-align: center;
+
+    margin: 0 auto;
+
+    color: #000;
+
+}
+
+
+#thumbs {
+
+    margin-top: 10px;
+
+}
+
+
+#thumbs img {
+
+    width: 150px;
+
+    height: auto;
+
+    border: solid 5px #FF8100;
+
+    margin: 5px;
+
+    cursor: pointer;
+
+}
+
+
+#image {
+
+    height: 500px;
+
+}
+
+
+#image img {
+
+    max-width: 800px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+}
+
+
+/* Section styles */
+
+section {
+
+    width: 900px;
+
+    margin: 0 auto;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    background-image: url('images/2colback.jpg');
+
+    background-repeat: repeat-y;
+
+    background-color: #ffffff;
+
+    clear: both;
+
+}
+
+
+article {
+
+    width: 800px;
+
+    margin: 0 auto;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+}
+
+
+footer {
+
+    width: 900px;
+
+    margin: 0 auto;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+}
+
+
+/* General image styles */
+
+img {
+
+    margin: 10px;
+
+    width: 200px;
+
+    height: auto;
+
+}
+
+
+/* Exception for header images */
+
+header img {
+
+    margin: 0;
+
+    border: none;
+
+    padding: 0;
+
+}
+
+
+/* Print button styles */
+
+.center {
+
+    text-align: center;
+
+}
+
+
+.center img[name="PrintButton"] {
+
+    width: 200px;
+
+    height: 50px;
+
+    border: none;
+
+    margin: 10px auto;
+
+}
+
+
+h1 {
+
+    font-family: 'msyhl', sans-serif;
+
+    color: #FF8100;
+
+}
+
+
+/* Clear floats */
+
+header::after {
+
+    content: "";
+
+    display: table;
+
+    clear: both;
+
+}

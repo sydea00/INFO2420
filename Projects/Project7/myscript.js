@@ -1,16 +1,28 @@
-<script>
+var PrintButton1 = new Image();
 
-	PrintButton1 = new Image
-	PrintButton2 = new Image
-	logo1 = new Image
-	logo2 = new Image
+var PrintButton2 = new Image();
+
+var logo1 = new Image();
+
+var logo2 = new Image();
+
+
+// Preload images
+
 if (document.images) {
-	PrintButton1.src = "images/printpagebutton1.png"
-	PrintButton2.src = "images/printpagebutton2.png"
-	logo1.src = "images/logo1.png"
-	logo2.src = "images/logo2.png"
+
+    PrintButton1.src = "images/print1.png";
+
+    PrintButton2.src = "images/print2.png";
+
+    logo1.src = "images/logo1.png";
+
+    logo2.src = "images/logo2.png";
+
 }
 
+
+// Arrays for thumbnail swapping
 
 var imgArray = new Array(
   'image1lg.jpg',
@@ -27,23 +39,26 @@ var imgArray = new Array(
 			'Cat and Dog'
 			
 		);
-			
-		var imgPath = "images/fullsize/";
-		
-		function swapImage(imgID) {
 
-			var theImage = document.getElementById('theImage');
-			var textDiv = document.getElementById('bottomText');
 
-			var newImg;
-			var textTitle;
+var imgPath = "images/fullsize/";
 
-			newImg = imgArray[imgID];
+
+// Image swap function for thumbnails
+
+function swapImage(imgID) {
+
+    var theImage = document.getElementById('theImage');
+    var textDiv = document.getElementById('bottomText');
+
+    var newImg = imgArray[imgID];
+    var textTitle = titleArray[imgID];
+
+newImg = imgArray[imgID];
 			theImage.src = imgPath + newImg;
 
 			textTitle=titleArray[imgID];
-
-      			textDiv.innerHTML = textTitle;
+	textDiv.innerHTML = textTitle;
 		}
 			
 		function preloadImages() {		
@@ -52,68 +67,59 @@ var imgArray = new Array(
 				tmpImg.src = imgPath + imgArray[i];
 			}
 		}
-		
-
-</script>
 
 
-</head>
-<body onload="preloadImages()">
+// Preload function for all images
 
-<div class="center">
+function preloadImages() {
 
-	<a href="" onMouseOver="document.PrintButton.src=PrintButton2.src;"
-	onMouseOut="document.PrintButton.src=PrintButton1.src;">
+    // Preload thumbnail images
 
-	<img src="images/printpagebutton1.png" width="200" height="50" 
-	name="PrintButton" alt="PrintButton" style="border:none;">
+    for(var i = 0; i < imgArray.length; i++) {
 
-	</a>
-</div>
+        var tmpImg = new Image();
 
+        tmpImg.src = imgPath + imgArray[i];
 
-<div id="logo" class="center">
-	<a href="logo.html" onMouseOver="document.logo.src=logo2.src;"
-	onMouseOut="document.logo.src=logo1.src;">
-<br>
-	<img src="images/logo1.png" width="150" height="150" 
-	name="logo" alt="logo" style="border:none;">
+    }
 
-	</a>
-</div>
+    
 
-<br>
-<br>
-<br>
+    // Preload rollover images
 
+    var rolloverImages = [
 
-<div id="thumbs">
-		<img src="images/thumbnails/image1sm.jpg" alt="Bird and Dog" onmouseover="swapImage(0);">
-		<img src="images/thumbnails/image2sm.jpg" alt="Hunting Dogs" onmouseover="swapImage(1);">
-		<img src="images/thumbnails/image3sm.jpg" alt="Kids with Dog" onmouseover="swapImage(2);">
-		<img src="images/thumbnails/image4sm.jpg" alt="Cat and Dog" onmouseover="swapImage(3);">
-		
-</div>
+        PrintButton1.src,
 
-	<div id="image">
+        PrintButton2.src,
 
-		<img id="theImage" src="images/fullSize/image1Lg.jpg" alt="Bird and Dog">
-		<h3 id="bottomText">Bird and Dog</h3>
-	</div>
+        logo1.src,
+
+        logo2.src
+
+    ];
+
+    
+
+    for(var j = 0; j < rolloverImages.length; j++) {
+
+        var tmpRollover = new Image();
+
+        tmpRollover.src = rolloverImages[j];
+
+    }
+
+}
 
 
+// Add window onload event if not already present in HTML
 
-<br>
-<br>
-<br>
-<br>
+if (window.addEventListener) {
 
-<img alt="background (2K)" src="images/background.png" height="150" width="900" />
+    window.addEventListener('load', preloadImages);
 
+} else if (window.attachEvent) {
 
+    window.attachEvent('onload', preloadImages);
 
-  
-
-</body>
-</html>
-// JavaScript Document
+}
