@@ -2,336 +2,312 @@
 /* CSS Document */
 
 body {
-
-    background-color: #62E0CF; 
-
-    background-image: url('images/background.png');
-
-    background-repeat: repeat;
-
-    font-family: 'msyhl', sans-serif;
-
-    color: #28334A;
-
-    font-size: 100%;
-
-    margin: 0;
-
-    padding: 0;
-
+background-color: #62E0CF; 
+background-image: url('images/background.png');
+background-repeat: repeat;
+font-family: 'msyhl', sans-serif;
+color: #28334A;
+font-size: 100%;
+margin: 0;
+padding: 0;
 }
-
 
 .container {
+width: 900px;
+margin: 0 auto;
+background-color: #ffffff;
+box-sizing: border-box;
+}
 
-    width: 900px;
-
-    margin: 0 auto;
-
-    background-color: #ffffff;
-
-    box-sizing: border-box;
-
+header {
+width: 900px;
+margin: 0 auto;
+padding: 20px;
+box-sizing: border-box;
+background-color: #ffffff;
+position: relative;
 }
 
 
-header {
+.header-top {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
 
-    width: 900px;
+#logo {
+width: 150px;
+margin-right: 20px;
+float: left;
+}
 
-    height: 250px;
+.banner {
+width: 700px;
+float: right;
+}
 
-    margin: 0 auto;
+.banner img {
+width: 600px;
+height: auto;  
+object-fit: cover;
+float: right;
+}
+
+.content-wrapper {
+
+    display: flex;
+
+    margin-top: 20px;
+
+    background-color: #f5f5f5;
 
     padding: 20px;
 
-    box-sizing: border-box;
-
-    background-color: #ffffff;
-
-    position: relative;
+    border-radius: 8px;
 
 }
 
 
-.logo {
+nav {
+    width: 200px;
+    padding-right: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav li {
+    margin-bottom: 10px;
+}
+
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #62E0CF;
+    color: #28334A;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+background-color: #FF8100;
+color: #ffffff;
+}
+
+
+.welcome-section {
+    padding-left: 20px;
+
+    border-left: 2px solid #62E0CF;
+
+}
+
+section {
+clear: both;
+	overflow: hidden;
+}
+
+.welcome-section h1 {
+    color: #FF8100;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: left; 
+}
+
+
+.welcome-text {
+     text-align: left;
+     line-height: 1.6;
+}
+
+.welcome-text p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.welcome-text ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+
+.welcome-text li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+#thumbs, #image {
+width: 900px;
+text-align: center;
+margin: 0 auto;
+color: #000;
+}
+
+#thumbs {
+margin-top: 10px;
+}
+
+#thumbs img {
+width: 150px;
+height: auto;
+border: solid 5px #FF8100;
+margin: 5px;
+cursor: pointer;
+}
+
+#image {
+height: 500px;
+}
+
+#image img {
+max-width: 800px;
+height: auto;
+margin: 0 auto;
+}
+
+section {
+width: 900px;
+margin: 0 auto;
+padding: 10px;
+box-sizing: border-box;
+background-image: url('images/2colback.jpg');
+background-repeat: repeat-y;
+background-color: #ffffff;
+clear: both;
+}
+
+article {
+width: 800px;
+margin: 0 auto;
+padding: 10px;
+box-sizing: border-box;
+}
+
+footer {
+width: 900px;
+margin: 0 auto;
+padding: 10px;
+box-sizing: border-box;
+}
+
+img {
+margin: 10px;
+width: 200px;
+height: auto;
+}
+
+header img {
+margin: 0;
+border: none;
+padding: 0;
+}
+
+.center {
+text-align: center;
+}
+
+.center img[name="PrintButton"] {
+width: 200px;
+height: 50px;
+border: none;
+margin: 10px auto;
+}
+
+h1 {
+font-family: 'msyhl', sans-serif;
+color: #FF8100;
+}
+
+header::after {
+content: "";
+display: table;
+clear: both;
+}
+
+.mini-tribute {
+
+    margin: 30px 0;
+
+    padding: 20px;
+
+    background-color: #f5f5f5;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+}
+
+
+.mini-tribute h2 {
+
+    color: #FF8100;
+
+    margin-bottom: 15px;
+
+    font-size: 1.5em;
+
+}
+
+
+.tribute-thumb {
 
     float: left;
 
     width: 150px;
 
-}
-
-
-.logo img {
-
-    width: 150px;
-
     height: auto;
 
-    margin: 0;
-
-    padding: 0;
-
-}
-
-
-.banner {
-
-    float: right;
-
-    width: 500px;
-
-}
-
-
-.banner img {
-
-    width: 100%;
-
-    height: auto;
-
-    margin: 0;
-
-    padding: 0;
-
-}
-
-
-/* Navigation styles */
-
-nav {
-
-    float: right;
-
-    width: 30%;
-
-    margin-top: 20px;
-
-    box-sizing: border-box;
-
-    clear: right;
-
-}
-
-
-nav ul {
-
-    list-style: none;
-
-    padding: 0;
-
-    margin: 0;
-
-}
-
-
-nav li {
-
-    margin-bottom: 10px;
-
-}
-
-
-nav a {
-
-    display: block;
-
-    padding: 10px 15px;
-
-    text-decoration: none;
-
-    background-color: #62E0CF;
-
-    color: #28334A;
+    margin: 0 20px 10px 0;
 
     border-radius: 5px;
 
-    text-align: center;
-
-    transition: all 0.3s ease;
+    border: 3px solid #62E0CF;
 
 }
 
 
-nav a:hover {
+.tribute-content {
 
-    background-color: #FF8100;
-
-    color: #ffffff;
+    overflow: hidden;
 
 }
 
 
-/* Thumbnail and full image styles */
-
-#thumbs, #image {
-
-    width: 900px;
-
-    text-align: center;
-
-    margin: 0 auto;
-
-    color: #000;
-
-}
-
-
-#thumbs {
-
-    margin-top: 10px;
-
-}
-
-
-#thumbs img {
-
-    width: 150px;
-
-    height: auto;
-
-    border: solid 5px #FF8100;
-
-    margin: 5px;
-
-    cursor: pointer;
-
-}
-
-
-#image {
-
-    height: 500px;
-
-}
-
-
-#image img {
-
-    max-width: 800px;
-
-    height: auto;
-
-    margin: 0 auto;
-
-}
-
-
-/* Section styles */
-
-section {
-
-    width: 900px;
-
-    margin: 0 auto;
-
-    padding: 10px;
-
-    box-sizing: border-box;
-
-    background-image: url('images/2colback.jpg');
-
-    background-repeat: repeat-y;
-
-    background-color: #ffffff;
-
-    clear: both;
-
-}
-
-
-article {
-
-    width: 800px;
-
-    margin: 0 auto;
-
-    padding: 10px;
-
-    box-sizing: border-box;
-
-}
-
-
-footer {
-
-    width: 900px;
-
-    margin: 0 auto;
-
-    padding: 10px;
-
-    box-sizing: border-box;
-
-}
-
-
-/* General image styles */
-
-img {
-
-    margin: 10px;
-
-    width: 200px;
-
-    height: auto;
-
-}
-
-
-/* Exception for header images */
-
-header img {
+.tribute-content p {
 
     margin: 0;
 
-    border: none;
+    line-height: 1.6;
 
-    padding: 0;
-
-}
-
-
-/* Print button styles */
-
-.center {
-
-    text-align: center;
+    color: #28334A;
 
 }
 
 
-.center img[name="PrintButton"] {
-
-    width: 200px;
-
-    height: 50px;
-
-    border: none;
-
-    margin: 10px auto;
-
-}
-
-
-h1 {
-
-    font-family: 'msyhl', sans-serif;
+.read-more {
 
     color: #FF8100;
 
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin-left: 5px;
+
 }
 
 
-/* Clear floats */
+.read-more:hover {
 
-header::after {
-
-    content: "";
-
-    display: table;
-
-    clear: both;
+    color: #62E0CF;
 
 }

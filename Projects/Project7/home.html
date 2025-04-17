@@ -1,122 +1,98 @@
 ﻿<!DOCTYPE html>
-
 <html>
-
 <head>
-
 <meta charset="UTF-8">
-
 <title>Rent-A-Pet</title>
-
 <script type="text/javascript" src="myscripts.js"></script>
-
 <link rel="stylesheet" href="mystyles.css" type="text/css">
-
 </head>
 
 <body onload="preloadImages()">
-
     <div class="container">
-
         <header>
+            <div class="header-top">
+                <div id="logo">
+                    <a href="logo.html" onMouseOver="document.logo.src=logo2.src;"
+                    onMouseOut="document.logo.src=logo1.src;">
+                        <img src="images/logo1.png" width="150" height="150" 
+                        name="logo" alt="Rent-A-Pet Logo" style="border:none;">
+                    </a>
+                </div>
 
-            <div id="logo" class="center">
-
-                <a href="logo.html" onMouseOver="document.logo.src=logo2.src;"
-
-                onMouseOut="document.logo.src=logo1.src;">
-
-                    <img src="images/logo1.png" width="150" height="150" 
-
-                    name="logo" alt="Rent-A-Pet Logo" style="border:none;">
-
-                </a>
-
+                <div class="banner">
+                    <img src="images/favbanner.png" alt="Rent-A-Pet Banner">
+                </div>
             </div>
-
-
-            <div class="banner">
-
-                <img src="images/favbanner.png" alt="Rent-A-Pet Banner">
-
-            </div>
-
             
+            <div class="content-wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="tributes.html">Tributes</a></li>
+                        <li><a href="survey.html">Survey</a></li>
+                        <li><a href="favorites.html">Favorites</a></li>
+                    </ul>
+                </nav>
 
-            <nav>
-
-                <ul>
-
-                    <li><a href="index.html">Home</a></li>
-
-                    <li><a href="about.html">About Us</a></li>
-
-                    <li><a href="tributes.html">Tributes</a></li>
-
-                    <li><a href="survey.html">Survey</a></li>
-
-                    <li><a href="favorites.html">Favorites</a></li>
-
-                </ul>
-
-            </nav>
-
+                <div class="welcome-section">
+                    <h1>Welcome to Rent-A-Pet</h1>
+                    <div class="welcome-text">
+                        <p>Experience the joy of pet companionship without long-term commitment! At Rent-A-Pet, we offer:</p>
+                        <ul>
+                            <li>Short-term pet companionship</li>
+                            <li>Carefully screened and healthy pets</li>
+                            <li>Flexible rental periods</li>
+                            <li>All supplies included</li>
+                            <li>Professional support and guidance</li>
+                        </ul>
+                        <p>Whether you're looking for a weekend cuddle buddy, a temporary hiking companion, or just want to try pet ownership before making a long-term commitment, we have the perfect pet for you!</p>
+                    </div>
+                </div>
+            </div>
         </header>
 
-
         <section>
-
             <article>
-
                 <div class="center">
-
                     <a href="#" onMouseOver="document.PrintButton.src=PrintButton2.src;"
-
                     onMouseOut="document.PrintButton.src=PrintButton1.src;">
-
                         <img src="images/print1.png" width="200" height="50" 
-
                         name="PrintButton" alt="Print Page" style="border:none;">
-
                     </a>
-
                 </div>
-
 
                 <div id="thumbs">
-
                     <img src="images/thumbnails/image1sm.jpg" alt="Bird and Dog" onmouseover="swapImage(0);">
-
                     <img src="images/thumbnails/image2sm.jpg" alt="Hunting Dogs" onmouseover="swapImage(1);">
-
                     <img src="images/thumbnails/image3sm.jpg" alt="Kids with Dog" onmouseover="swapImage(2);">
-
                     <img src="images/thumbnails/image4sm.jpg" alt="Cat and Dog" onmouseover="swapImage(3);">
-
                 </div>
-
 
                 <div id="image">
-
                     <img id="theImage" src="images/fullSize/image1Lg.jpg" alt="Bird and Dog">
-
                     <h3 id="bottomText">Bird and Dog</h3>
-
                 </div>
-
             </article>
-
         </section>
 
-
         <footer>
+            <div class="mini-tribute">
+                <h2>Pet Spotlight: Bessie and her buddy</h2>
+                <img src="images/pet1.jpg" alt="Elderly Woman cuddling dog" class="tribute-thumb">
+                <div class="tribute-content">
+                    <p>
+                        Rent A Pet lets me enjoy a pet without the hassle of ownership!
+                        <a href="tributes.html" class="read-more">more... </a>
+                    </p>
+                </div>
+            </div>
 
-            <!-- Footer content -->
-
+            <div class="footer-content">
+                <p><a href="mailto:sydney.williams@uvu.edu">Contact Webmaster at sydney.williams@uvu.edu</a></p>
+                <p>This web site has been created solely for educational purposes.</p>
+            </div>
         </footer>
-
     </div>
-
 </body>
-
 </html>
