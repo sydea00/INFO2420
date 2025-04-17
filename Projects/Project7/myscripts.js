@@ -33,13 +33,13 @@ window.onload = function() {
 
 var imgArray = [
 
-    'image1Lg.jpg',
+    'image1lg.jpg',
 
-    'image2Lg.jpg',
+    'image2lg.jpg',
 
-    'image3Lg.jpg',
+    'image3lg.jpg',
 
-    'image4Lg.jpg'
+    'image4lg.jpg'
 
 ];
 
@@ -61,7 +61,7 @@ var titleArray = [
 
 // Set path to fullsize images
 
-var imgPath = "images/";
+var imgPath = "images/fullsize/";
 
 
 // Function to swap images
