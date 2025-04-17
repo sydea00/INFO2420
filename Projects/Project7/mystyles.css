@@ -169,12 +169,9 @@ width: 900px;
 }
 
 #image img {
-    max-width: 900px;  /* Increased from 800px */
-    min-height: 550px;  /* Added to ensure minimum height */
-    height: auto;
-    margin: 0 auto;
-    object-fit: contain;  /* This ensures the image maintains its aspect ratio */
-    display: block;  /* This helps with centering */
+max-width: 500px;
+height: auto;
+margin: 0 auto;
 }
 
 section {
