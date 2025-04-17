@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Rent-A-Pet</title>
-<script type="text/javascript" src="myscripts.js"></script>
+<script src="myscripts.js" defer></script>
 <link rel="stylesheet" href="mystyles.css" type="text/css">
 </head>
 
@@ -12,11 +12,12 @@
         <header>
             <div class="header-top">
                 <div id="logo">
-                    <a href="logo.html" onMouseOver="document.logo.src=logo2.src;"
-                    onMouseOut="document.logo.src=logo1.src;">
-                        <img src="images/logo1.png" width="150" height="150" 
-                        name="logo" alt="Rent-A-Pet Logo" style="border:none;">
-                    </a>
+                    <a href="logo.html" onmouseover="document.images['logo'].src=logo2.src"
+					   onmouseout="document.images['logo'].src=logo1.src">
+						<img src="images/logo1.png" width="150" height="150" 
+							 name="logo" alt="Rent-A-Pet Logo" style="border:none;">
+
+</a>
                 </div>
 
                 <div class="banner">
@@ -55,11 +56,12 @@
         <section>
             <article>
                 <div class="center">
-                    <a href="#" onMouseOver="document.PrintButton.src=PrintButton2.src;"
-                    onMouseOut="document.PrintButton.src=PrintButton1.src;">
-                        <img src="images/print1.png" width="200" height="50" 
-                        name="PrintButton" alt="Print Page" style="border:none;">
-                    </a>
+                    <a href="#" onmouseover="document.images['PrintButton'].src=PrintButton2.src"
+					   onmouseout="document.images['PrintButton'].src=PrintButton1.src">
+						<img src="images/print1.png" width="200" height="50" 
+							 name="PrintButton" alt="Print Page" style="border:none;">
+
+</a>
                 </div>
 
                 <div id="thumbs">
