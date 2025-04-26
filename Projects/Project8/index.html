@@ -2,60 +2,24 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Rent-A-Pet Splash Page</title>
+<title>Rent-A-Pet</title>
+<link rel="stylesheet" href="mystyles.css" type="text/css" media="print">
 
-<style>
-    @font-face {
-font-family: 'msyhl'; 
-src: url('fonts/msyhl.ttcf'); 
-src: local('msyhl'), url('fonts/msyhl.ttcf') format('truetype'); 
-}
-    body {
-        font-family: 'msyhl', sans-serif;
-        background-color: #00AD95; /* aqua/blue/green background / nature and animals = natural world */
-        color: #28334A; /* blue grey text */
-        font-size: 100%; /* normal text font size */
-    }
-    h1 {
-        font-family: 'msyhl', sans-serif;
-        color: #FF8100; /* deep blue grey headings */
-        border: 5px solid #096881;
-    }
-    h2 {
-        font-family: 'msyhl', sans-serif;
-        color: #49E100; /* deep blue grey headings */
-        border: 2px solid #62E0CF;
-    }
-    a {
-        color: #FF0000; /* link color */
-    }
-    a:visited {
-        color: #C31B00; /* visited link color */
-    }
-    a:hover {
-        color: #420E0E; /* hover link color */
-    }
-    img {
-        margin: 10px; /* add margin around images */
-        
-    }
-    .thumbnailleft{
-        float: left;
-        padding-right: 10px;
-    }
-
-    .thumbnailright{
-        float: right;
-        padding-left: 10px;
-    }
-</style>
 
 </head>
 
 <body>
-
+<h1>Rent-A-Pet - Your Purrfect Companion Awaits!</h1>
 <p>
- <h2><img src="imagemap.png" alt="logo" width="" height=""><br>Image Map</h2>
+ <h2><img src="imagemap.png" alt="logo" width="" height="" usemap="#Map">
+   <map name="Map">
+     <area shape="rect" coords="4,65,279,264" href="AboutUs.html" alt="AboutUs">
+     <area shape="rect" coords="287,68,487,390" href="Home.html" alt="Home">
+     <area shape="rect" coords="3,267,282,390" href="Survey.html" alt="Survey">
+     <area shape="rect" coords="492,118,697,393" href="Tributes.html" alt="Tributes">
+     <area shape="rect" coords="492,65,696,114" href="Links.html" alt="Links">
+   </map>
+ <br>Click to Navigate!</h2>
 </p>
 
 </body>

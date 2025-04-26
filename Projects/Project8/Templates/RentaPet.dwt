@@ -32,28 +32,25 @@
             <div class="content-wrapper">
                 <nav>
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../about.html">About Us</a></li>
-                        <li><a href="../tributes.html">Tributes</a></li>
-                        <li><a href="../survey.html">Survey</a></li>
-                        <li><a href="../favorites.html">Favorites</a></li>
-                    </ul>
+                        <li><a href="../index.html">Rent-A-Pet</a></li>
+
+                  </ul>
                 </nav>
 
-                <div class="welcome-section">
-                    <h1>Welcome to Rent-A-Pet</h1>
-                    <div class="welcome-text">
-                        <p>Experience the joy of pet companionship without long-term commitment! At Rent-A-Pet, we offer:</p>
-                        <ul>
-                            <li>Short-term pet companionship</li>
-                            <li>Carefully screened and healthy pets</li>
-                            <li>Flexible rental periods</li>
-                            <li>All supplies included</li>
-                            <li>Professional support and guidance</li>
-                        </ul>
-                        <p>Whether you're looking for a weekend cuddle buddy, a temporary hiking companion, or just want to try pet ownership before making a long-term commitment, we have the perfect pet for you!</p>
-                    </div>
+                <div class="welcome-section"><!-- TemplateBeginEditable name="intro" -->
+                <h1>Welcome to Rent-A-Pet</h1>
+                <div class="welcome-text">
+                  <p>Experience the joy of pet companionship without long-term commitment! At Rent-A-Pet, we offer:</p>
+                  <ul>
+                    <li>Short-term pet companionship</li>
+                    <li>Carefully screened and healthy pets</li>
+                    <li>Flexible rental periods</li>
+                    <li>All supplies included</li>
+                    <li>Professional support and guidance</li>
+                  </ul>
+                  <p>Whether you're looking for a weekend cuddle buddy, a temporary hiking companion, or just want to try pet ownership before making a long-term commitment, we have the perfect pet for you!</p>
                 </div>
+                <!-- TemplateEndEditable --></div>
             </div>
         </header>
         <!-- TemplateBeginEditable name="PageContent" -->
