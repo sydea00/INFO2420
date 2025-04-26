@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/RentaPet.dwt" codeOutsideHTMLIsLocked="false" -->
+﻿﻿<!DOCTYPE html>
+<html>
 <head>
 <meta charset="UTF-8">
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Rent-A-Pet Home</title>
-<!-- InstanceEndEditable -->
-<script src="myscripts.js" defer></script>
-<link rel="stylesheet" href="print.css" type="text/css" media="print">
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Rent-A-Pet</title>
+<!-- TemplateEndEditable -->
+<script src="../myscripts.js" defer></script>
+<link rel="stylesheet" href="../print.css" type="text/css" media="print">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 
 <body onload="preloadImages()">
@@ -16,27 +16,27 @@
         <header>
             <div class="header-top">
                 <div id="logo">
-                    <a href="logo.html" onmouseover="document.images['logo'].src=logo2.src"
+                    <a href="../logo.html" onmouseover="document.images['logo'].src=logo2.src"
 					   onmouseout="document.images['logo'].src=logo1.src">
-						<img src="images/logo1.png" width="150" height="150" 
+						<img src="../images/logo1.png" width="150" height="150" 
 							 name="logo" alt="Rent-A-Pet Logo" style="border:none;">
 
 </a>
                 </div>
 
                 <div class="banner">
-                    <img src="images/favbanner.png" alt="Rent-A-Pet Banner">
+                    <img src="../images/favbanner.png" alt="Rent-A-Pet Banner">
                 </div>
             </div>
             
             <div class="content-wrapper">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="tributes.html">Tributes</a></li>
-                        <li><a href="survey.html">Survey</a></li>
-                        <li><a href="favorites.html">Favorites</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../tributes.html">Tributes</a></li>
+                        <li><a href="../survey.html">Survey</a></li>
+                        <li><a href="../favorites.html">Favorites</a></li>
                     </ul>
                 </nav>
 
@@ -56,27 +56,27 @@
                 </div>
             </div>
         </header>
-        <!-- InstanceBeginEditable name="PageContent" -->
+        <!-- TemplateBeginEditable name="PageContent" -->
         <section>
           <article>
             <div class="center"> <a href="#" onmouseover="document.images['PrintButton'].src=PrintButton2.src"
-					   onmouseout="document.images['PrintButton'].src=PrintButton1.src"> <img src="images/print1.png" width="200" height="50" 
+					   onmouseout="document.images['PrintButton'].src=PrintButton1.src"> <img src="../images/print1.png" width="200" height="50" 
 							 name="PrintButton" alt="Print Page" style="border:none;"> </a> </div>
-            <div id="thumbs"> <img src="images/thumbnails/image1sm.jpg" alt="Bird and Dog" onmouseover="swapImage(0);"> <img src="images/thumbnails/image2sm.jpg" alt="Hunting Dogs" onmouseover="swapImage(1);"> <img src="images/thumbnails/image3sm.jpg" alt="Kids with Dog" onmouseover="swapImage(2);"> <img src="images/thumbnails/image4sm.jpg" alt="Cat and Dog" onmouseover="swapImage(3);"> </div>
-            <div id="image"> <img id="theImage" src="images/fullsize/image1lg.jpg" alt="Bird and Dog">
+            <div id="thumbs"> <img src="../images/thumbnails/image1sm.jpg" alt="Bird and Dog" onmouseover="swapImage(0);"> <img src="../images/thumbnails/image2sm.jpg" alt="Hunting Dogs" onmouseover="swapImage(1);"> <img src="../images/thumbnails/image3sm.jpg" alt="Kids with Dog" onmouseover="swapImage(2);"> <img src="../images/thumbnails/image4sm.jpg" alt="Cat and Dog" onmouseover="swapImage(3);"> </div>
+            <div id="image"> <img id="theImage" src="../images/fullsize/image1lg.jpg" alt="Bird and Dog">
               <h3 id="bottomText">Bird and Dog</h3>
             </div>
           </article>
         </section>
-        <!-- InstanceEndEditable -->
+        <!-- TemplateEndEditable -->
         <footer>
             <div class="mini-tribute">
                 <h2>Pet Spotlight: Bessie and her buddy</h2>
-                <img src="images/pet1.jpg" alt="Elderly Woman cuddling dog" class="tribute-thumb">
+                <img src="../images/pet1.jpg" alt="Elderly Woman cuddling dog" class="tribute-thumb">
                 <div class="tribute-content">
                     <p>
                         Rent A Pet lets me enjoy a pet without the hassle of ownership!
-                        <a href="tributes.html" class="read-more">more... </a>
+                        <a href="../tributes.html" class="read-more">more... </a>
                     </p>
                 </div>
             </div>
@@ -88,4 +88,4 @@
         </footer>
     </div>
 </body>
-<!-- InstanceEnd --></html>
+</html>
